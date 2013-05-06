@@ -1,0 +1,10 @@
+# Require Membership Readme
+
+## 1.1
+
+- Changing pattern match for server request URI to match anything that ends in wp-login.php.  This allows for subdirectory installs of WP.
+- Adding license info
+
+## 1.0
+
+- Initial release
