@@ -13,7 +13,7 @@ function bd_require_membership() {
 
 	if (
 		!is_user_logged_in()
-		&& !preg_match('|^/wp-login\.php|', $_SERVER['REQUEST_URI'])
+		&& !preg_match('|/wp-login\.php$|', $_SERVER['REQUEST_URI'])
 	) {
 		wp_redirect(wp_login_url());
 		exit;
