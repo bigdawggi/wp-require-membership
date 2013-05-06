@@ -1,0 +1,8 @@
+# Require Membership
+
+Crazy-simple way to require people to log in to view your content.
+
+## Installation
+
+- Upload to plugins folder
+- Activate plugin
