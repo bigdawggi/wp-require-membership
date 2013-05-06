@@ -2,9 +2,10 @@
 /*
 Plugin Name: Require Membership
 Description: Crazy-simple way to require people to log in to view your content.
-Version: 1.0
+Version: 1.1
 Author: Bigdawggi
 Author URI: http://bigdawggi.com
+License: GPLv2 or later
 */
 
 function bd_require_membership() {
@@ -13,7 +14,7 @@ function bd_require_membership() {
 
 	if (
 		!is_user_logged_in()
-		&& !preg_match('|^/wp-login\.php|', $_SERVER['REQUEST_URI'])
+		&& !preg_match('|/wp-login\.php$|', $_SERVER['REQUEST_URI'])
 	) {
 		wp_redirect(wp_login_url());
 		exit;
